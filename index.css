@@ -1,0 +1,45 @@
+body {
+    /* background-image : url("./background/mountain.jpg"); */
+    background-size : cover;
+    background-position : center;
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+    margin : 0;
+}
+
+h1 {
+    font-size : 88px;
+    text-align : center;
+    border-bottom : 1px solid gray;
+    margin : 0;
+    padding : 20px;
+}
+
+a {
+    color : black;
+    text-decoration : none;
+}
+
+.saw {
+    color : gray;
+}
+
+.ollink {
+    text-align : center;
+}
+
+#grid {
+    /* border : 5px solid pink; */
+    display : grid;
+    grid-template-columns : 100px 1fr;
+    border-right : 1px solid gray;
+    width : 100px;
+    margin : 0;
+    padding : 20px;
+    text-align : center;
+}
+
+.iframe {
+    padding-left : 50px;
+}
+

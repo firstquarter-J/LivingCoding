@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="index.css" rel="stylesheet">
         <!-- <meta charset="utf-8"> // 형식? 이렇게 읽어라? -->
         <meta charset="utf-8">
         <title>장상현</title>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQZXTCL6F4"></script>
         <script>
@@ -14,42 +16,55 @@
             gtag('config', 'G-TQZXTCL6F4');
         </script>
 
-        <style>
+        <!--
+        <style src="Homepage.css">
             a {
-                color : rgb(0, 188, 245);
+                color : black;
                 text-decoration : none;
             }
+            h1 {
+                font-size : 88px;
+                text-align : center;
+            }
+            .saw {
+                color : gray;
+            }
         </style>
+        -->
     </head>
 
     <body>
-        <h1>Welcome</h1>
-        <ol> <!-- ol = Ordered List / ul = Unordered List -->
-            <li><a href="https://www.youtube.com/channel/UCZbgw-o-kYIwYlqOWIXmH3Q">YouTube</a></li>
-            <li><a href="https://velog.io/@firstquarter">Velog</a></li>
-            <li><a href="https://github.com/firstquarter-J">GitHub</a></li>
-        </ol>
+        <h1><a href="index.html">Welcome</a></h1>
+        
+        <div id="grid">
+            <ol> <!-- ol = Ordered List / ul = Unordered List -->
+                <div class="ollink"><h2>Link</h2></div>
+                <li><a href="https://www.youtube.com/channel/UCZbgw-o-kYIwYlqOWIXmH3Q" class="saw">YouTube</a></li>
+                <li><a href="https://velog.io/@firstquarter" class="saw">Velog</a></li>
+                <li><a href="https://github.com/firstquarter-J" class="saw">GitHub</a></li>
+            </ol>
 
         <!-- YouTube -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DcY2oYWyN5k" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DcY2oYWyN5k" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
          
         <!--
         <p><a href="https://www.w3.org/TR/html5/" target"_blank" // _blank는 뭐지?
             title="html5 specification">Hypertext Markup Language</a></p>
         -->
 
-        <img src="island.jpg" width="100%">
-
         
 
-        <!-- <u>u tag</u> -->
+        <!-- <u>u tag</u> 유태그 -->
 
-        <!-- <strong>strong tag</strong> -->
+        <!-- <strong>strong tag</strong> 스트롱 태그-->
         <p>
             <!--Start of Tawk.to Script-->
             <script type="text/javascript">
