@@ -13,24 +13,43 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-TQZXTCL6F4');
         </script>
 
-        <input type="button" value="Night" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
+        <!-- <input id="night_day" type="button" value="밤" onclick="
+            if(document.querySelector('#night_day').value === '밤') {
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                document.querySelector('#night_day').value='낮';
+            }
+            else {
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#night_day').value='밤';
+            }
+        "> -->
+
+        <input id="night_day" type="button" value="밤" onclick="
+            var target = document.querySelector('body');
+            if(this.value === '밤') {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value='낮';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value='밤';
+            }
         ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        documnet.querySelector('body').style.color='black';
-        ">
+
     </head>
 
     <body>
         <h1><a href="index.html">Welcome</a></h1>
         <!-- <input type="text" onchange="alert('changed')"> -->
         <!-- <input type="text" onkeydown="alert('ket down!')"> -->
+
         <div id="grid">
             <ol> <!-- ol = Ordered List / ul = Unordered List -->
                 <div class="ollink"><h2>Link</h2></div>
@@ -49,6 +68,20 @@
                 </iframe>
             </div>
         </div>
+
+        <input id="night_day" type="button" value="밤" onclick="
+            var target = document.querySeletor('body');
+            if(this.value === '밤') {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                this.value='낮';
+            }
+            else {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                this.value='밤';
+            }
+        ">
          
         <!--
         <p><a href="https://www.w3.org/TR/html5/" target"_blank" // _blank는 뭐지?
@@ -99,6 +132,8 @@
                     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
                 </noscript>
         </p>
+
+        
 
     </body>
 </html>

@@ -12,11 +12,11 @@ h1 {
     font-size : 88px;
     text-align : center;
     margin : 0;
-    padding : 20px;
+    padding-bottom : 30px;
 }
 
 a {
-    color : black;
+    color : blue;
     text-decoration : none;
 }
 
