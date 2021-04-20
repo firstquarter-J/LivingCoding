@@ -16,17 +16,13 @@ h1 {
 }
 
 a {
-    color : blue;
+    /* color : blue; */
     text-decoration : none;
 }
 
-.saw {
-    color : gray;
-}
-
-.ollink {
+/* .ollink {
     text-align : center;
-}
+} */
 
 #grid {
     /* border : 5px solid pink; */

@@ -5,6 +5,9 @@
 
         <!-- <meta charset="utf-8"> // 형식? 이렇게 읽어라? -->
         <meta charset="utf-8">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
         <title>장상현</title>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,31 +19,35 @@
             gtag('config', 'G-TQZXTCL6F4');
         </script>
 
-        <!-- <input id="night_day" type="button" value="밤" onclick="
-            if(document.querySelector('#night_day').value === '밤') {
-                document.querySelector('body').style.backgroundColor='black';
-                document.querySelector('body').style.color='white';
-                document.querySelector('#night_day').value='낮';
-            }
-            else {
-                document.querySelector('body').style.backgroundColor='white';
-                document.querySelector('body').style.color='black';
-                document.querySelector('#night_day').value='밤';
-            }
-        "> -->
+        <script src="colors.js"></script>
 
         <input id="night_day" type="button" value="밤" onclick="
-            var target = document.querySelector('body');
-            if(this.value === '밤') {
-                target.style.backgroundColor='black';
-                target.style.color='white';
-                this.value='낮';
-            }
-            else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                this.value='밤';
-            }
+            NightDayHandler(this);
+            // var target = document.querySelector('body');
+            // if(this.value === '밤') {
+            //     target.style.backgroundColor='black';
+            //     target.style.color='white';
+            //     this.value='낮';
+
+            //     var alist = document.querySelectorAll('a');
+            //     var i = 0;
+            //     while(i < alist.length){
+            //         alist[i].style.color = 'powderblue';
+            //         i = i + 1;
+            //     }
+            // }
+            // else {
+            //     target.style.backgroundColor='white';
+            //     target.style.color='black';
+            //     this.value='밤';
+
+            //     var alist = document.querySelectorAll('a');
+            //     var i = 0;
+            //     while(i < alist.length) {
+            //         alist[i].style.color = 'blue';
+            //         i = i + 1;
+            //     }   
+            // }
         ">
 
     </head>
@@ -53,9 +60,10 @@
         <div id="grid">
             <ol> <!-- ol = Ordered List / ul = Unordered List -->
                 <div class="ollink"><h2>Link</h2></div>
-                <li><a href="https://www.youtube.com/channel/UCZbgw-o-kYIwYlqOWIXmH3Q" class="saw">YouTube</a></li>
-                <li><a href="https://velog.io/@firstquarter" class="saw">Velog</a></li>
-                <li><a href="https://github.com/firstquarter-J" class="saw">GitHub</a></li>
+                <li><a href="https://www.youtube.com/channel/UCZbgw-o-kYIwYlqOWIXmH3Q">YouTube</a></li>
+                <li><a href="https://velog.io/@firstquarter">Velog</a></li>
+                <li><a href="https://github.com/firstquarter-J">GitHub</a></li>
+                <li><a href="https://www.notion.so/85e0d5c12d42480fab1747aac48d333f">Profile</a></li>
             </ol>
 
         <!-- YouTube -->
@@ -69,19 +77,7 @@
             </div>
         </div>
 
-        <input id="night_day" type="button" value="밤" onclick="
-            var target = document.querySeletor('body');
-            if(this.value === '밤') {
-                target.style.backgroundColor='black';
-                target.style.color='white';
-                this.value='낮';
-            }
-            else {
-                target.style.backgroundColor='white';
-                target.style.color='black';
-                this.value='밤';
-            }
-        ">
+
          
         <!--
         <p><a href="https://www.w3.org/TR/html5/" target"_blank" // _blank는 뭐지?
