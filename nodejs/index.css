@@ -1,0 +1,23 @@
+body {
+    /* background-image : url("./background/island.jpg"); */
+    background-size : cover;
+    background-position : center;
+    background-repeat : no-repeat;
+    background-attachment : fixed;
+    margin : 0;
+}
+
+h1 {
+    font-size : 88px;
+    /* text-align : center; */
+    margin : 0;
+    /* padding-bottom : 30px; */
+}
+
+a {
+    text-decoration : none;
+}
+
+.link {
+    padding-left : 30px;
+}
